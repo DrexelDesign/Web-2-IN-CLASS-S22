@@ -3,4 +3,12 @@
 ============= */
 #partners{
 
+    ul{
+        display: grid;
+        gap: 24px;
+        grid-template-rows: repeat(6, 220px);
+        li{
+
+        }
+    }
 }
