@@ -2,7 +2,39 @@
     About
 ============= */
 #about{
-    img{
-        width: 100%;
+
+
+    @include md{
+        // grid is being set from the base scss file with the class of css-grid-global
+        grid-template-columns: auto 80% auto;
     }
+
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
+
+
+    >div{
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 45% auto;
+            gap: 136px;
+        }
+
+        border: 1px solid red;
+
+        aside{
+            img{
+                width: 100%;
+            }
+        }
+
+
+        section{
+
+        }
+
+    }
+
 }

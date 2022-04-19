@@ -363,10 +363,10 @@ ul li {
 .css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+  grid-template-areas: ". global-content .";
 }
 .css-grid-global > div {
-  grid-area: header;
+  grid-area: global-content;
 }
 
 /* =============
@@ -405,10 +405,29 @@ textarea {
 /* =============
     About
 ============= */
-#about img {
+@media (min-width: 768px) {
+  #about {
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #about {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#about > div {
+  border: 1px solid red;
+}
+@media (min-width: 1024px) {
+  #about > div {
+    display: grid;
+    grid-template-columns: 45% auto;
+    gap: 136px;
+  }
+}
+#about > div aside img {
   width: 100%;
 }
-
 /* =============
     Heroes
 ============= */
@@ -419,11 +438,67 @@ textarea {
 /* =============
     Partners
 ============= */
-#partners ul {
+@media (min-width: 1024px) {
+  #partners {
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #partners {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#partners > div ul {
   display: grid;
   gap: 24px;
   grid-template-rows: repeat(6, 220px);
 }
+@media (min-width: 768px) {
+  #partners > div ul {
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(3, 220px);
+  }
+}
+@media (min-width: 1024px) {
+  #partners > div ul {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "p1 p1 p1 p1 p1 p2 p2 p2 p3 p3" "p4 p4 p5 p5 p5 p6 p6 p6 p6 p6";
+  }
+}
+#partners > div ul li {
+  border: 1px solid red;
+}
+@media (min-width: 1024px) {
+  #partners > div ul #p1 {
+    grid-area: p1;
+  }
+}
+@media (min-width: 1024px) {
+  #partners > div ul #p2 {
+    grid-area: p2;
+  }
+}
+@media (min-width: 1024px) {
+  #partners > div ul #p3 {
+    grid-area: p3;
+  }
+}
+@media (min-width: 1024px) {
+  #partners > div ul #p4 {
+    grid-area: p4;
+  }
+}
+@media (min-width: 1024px) {
+  #partners > div ul #p5 {
+    grid-area: p5;
+  }
+}
+@media (min-width: 1024px) {
+  #partners > div ul #p6 {
+    grid-area: p6;
+  }
+}
+
 /* =============
    Request
 ============= */
