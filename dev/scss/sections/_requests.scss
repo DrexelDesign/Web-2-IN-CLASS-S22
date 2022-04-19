@@ -3,4 +3,16 @@
 ============= */
 #requests{
 
+   @include md{
+      grid-template-columns: auto 80% auto;
+   }
+
+   @include xxl{
+      grid-template-columns: auto 720px auto;
+   }
+
+
+   >div{
+      border: 1px solid green;
+   }
 }

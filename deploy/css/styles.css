@@ -461,12 +461,10 @@ textarea {
 }
 @media (min-width: 1024px) {
   #partners > div ul {
-    grid-template-columns: repeat(10, 1fr);
     grid-template-areas: "p1 p1 p1 p1 p1 p2 p2 p2 p3 p3" "p4 p4 p5 p5 p5 p6 p6 p6 p6 p6";
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 220px);
   }
-}
-#partners > div ul li {
-  border: 1px solid red;
 }
 @media (min-width: 1024px) {
   #partners > div ul #p1 {
@@ -502,3 +500,16 @@ textarea {
 /* =============
    Request
 ============= */
+@media (min-width: 768px) {
+  #requests {
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #requests {
+    grid-template-columns: auto 720px auto;
+  }
+}
+#requests > div {
+  border: 1px solid green;
+}
