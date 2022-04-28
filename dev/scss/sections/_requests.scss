@@ -14,5 +14,17 @@
 
    >div{
       border: 1px solid green;
+
+      h2{
+         margin: 8px 0 32px 0;
+
+         @include md{
+            margin: 16px 0 24px 0;
+         }
+
+         @include lg{
+            margin: 24px 0 32px 0;
+         }
+      }
    }
 }

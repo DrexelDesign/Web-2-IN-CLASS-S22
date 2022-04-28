@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>In-Class Demo</title>
 </head>
@@ -28,7 +33,7 @@
         <img src="img/heroes/hero-1.jpg" alt="Do Something Great">
     </section>
 
-    <section id="about" class="css-grid-global">
+    <section id="about" class="css-grid-global content-spacing">
         <div>
             <aside>
                 <img src="img/about/about-hero.jpg" alt="people having fun">
@@ -40,7 +45,7 @@
         </div>
     </section>
 
-    <section id="partners" class="css-grid-global">
+    <section id="partners" class="css-grid-global content-spacing">
         <div>
             <h1>Partners</h1>
             <h2>Companies we love to work with!</h2>
@@ -55,20 +60,23 @@
         </div>
     </section>
 
-    <section id="requests" class="css-grid-global">
+    <section id="requests" class="css-grid-global content-spacing">
         <div>
             <h1>Request access to our closed beta</h1>
             <h2>Drop your email below to join the wait list</h2>
-            <input type="text">
-            <button>Request</button>
+            <form action="#">
+                <input type="text">
+                <button>Request</button>
+            </form>
+    
         </div>
     </section>
 
-    <section class="heroes">
+    <section class="heroes content-spacing">
         <img src="img/heroes/hero-2.jpg" alt="People in office pretending to work">
     </section>
 
-    <footer class="css-grid-global">
+    <footer class="css-grid-global content-spacing">
         <div>
             <img src="img/header/logo.svg" alt="company logo">
             <p>Made by <span>@josh</span></p>

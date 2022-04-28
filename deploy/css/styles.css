@@ -360,6 +360,15 @@ ul li {
   list-style: none;
 }
 
+.content-spacing {
+  margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .content-spacing {
+    margin-top: 64px;
+  }
+}
+
 .css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -372,6 +381,14 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
@@ -438,6 +455,27 @@ textarea {
 #about > div aside img {
   width: 100%;
 }
+#about > div section h1 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 24px 0 16px 0;
+  padding: 0 16%;
+}
+@media (min-width: 768px) {
+  #about > div section h1 {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  #about > div section h1 {
+    margin: 93px 0 24px 0;
+  }
+}
+#about > div section p {
+  text-align: center;
+}
+
 /* =============
     Heroes
 ============= */
@@ -458,6 +496,14 @@ textarea {
     grid-template-columns: auto 1440px auto;
   }
 }
+#partners > div h2 {
+  margin: 24px 0 24px 0;
+}
+@media (min-width: 1024px) {
+  #partners > div h2 {
+    margin: 16px 0 32px 0;
+  }
+}
 #partners > div ul {
   display: grid;
   gap: 24px;
@@ -475,6 +521,9 @@ textarea {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 220px);
   }
+}
+#partners > div ul li {
+  border: 1px solid red;
 }
 @media (min-width: 1024px) {
   #partners > div ul #p1 {
@@ -522,4 +571,17 @@ textarea {
 }
 #requests > div {
   border: 1px solid green;
+}
+#requests > div h2 {
+  margin: 8px 0 32px 0;
+}
+@media (min-width: 768px) {
+  #requests > div h2 {
+    margin: 16px 0 24px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #requests > div h2 {
+    margin: 24px 0 32px 0;
+  }
 }

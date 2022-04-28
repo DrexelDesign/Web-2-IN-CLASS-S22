@@ -11,6 +11,15 @@ ul{
     }
 }
 
+.content-spacing{
+    // margin: 32px 0 0 0;
+    margin-top: 32px;
+
+    @include md{
+        margin-top: 64px;
+    }
+}
+
 
 .css-grid-global{
     display: grid;

@@ -9,6 +9,14 @@
 		grid-template-columns: auto 1440px auto;
 	}
 	>div {
+		h2{
+			margin: 24px 0 24px 0;
+
+			@include lg{
+				margin: 16px 0 32px 0;
+			}
+		}
+
 		ul {
 			display: grid;
 			gap: 24px;
@@ -25,7 +33,7 @@
 				grid-template-rows: repeat(2, 220px);
 			}
 			li {
-				// border: 1px solid red;
+				border: 1px solid red;
 			}
 			#p1 {
 				@include lg {
